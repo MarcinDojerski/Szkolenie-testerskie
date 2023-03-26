@@ -1,0 +1,339 @@
+{
+	"info": {
+		"_postman_id": "7124d62f-5d67-424a-b7ae-7327040b79b0",
+		"name": "Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Board",
+			"_postman_id": "374516e3-55e0-427c-9fa8-f294ab15e41a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= Tablica API&key=4238fa5bc3803e07ba54c5401a5f66ef&token=ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "4238fa5bc3803e07ba54c5401a5f66ef"
+						},
+						{
+							"key": "token",
+							"value": "ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewList",
+			"_postman_id": "25537b52-7542-422d-8adc-abe18f117179",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/list?name= ToDo&idBoard=6420001fd0ee4cd4b409738a&key=4238fa5bc3803e07ba54c5401a5f66ef&token=ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"list"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " ToDo"
+						},
+						{
+							"key": "idBoard",
+							"value": "6420001fd0ee4cd4b409738a"
+						},
+						{
+							"key": "key",
+							"value": "4238fa5bc3803e07ba54c5401a5f66ef"
+						},
+						{
+							"key": "token",
+							"value": "ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCard",
+			"_postman_id": "bd3f7f1f-5616-4962-b46e-2b48325c2c47",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards/?idList=642000928d6c8c6b5223adbc&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "642000928d6c8c6b5223adbc"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewList",
+			"_postman_id": "4d91960b-e22d-4731-a6d2-e494d721a62e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1//lists?name=In Progress&idBoard=6420001fd0ee4cd4b409738a&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "In Progress"
+						},
+						{
+							"key": "idBoard",
+							"value": "6420001fd0ee4cd4b409738a"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateBoard",
+			"_postman_id": "98f02e4a-047e-45e6-b010-5d547c158a34",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/boards/{{idBoard}}?desc=czacha dymi&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						"{{idBoard}}"
+					],
+					"query": [
+						{
+							"key": "desc",
+							"value": "czacha dymi"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCard",
+			"_postman_id": "a0ee7f46-4c4f-429b-a202-9be5fc98b0ea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards/?idList=64201884634aa34f9ac9696e&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						""
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "64201884634aa34f9ac9696e"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMember",
+			"_postman_id": "c32d10da-4152-46df-b1d6-5e07d457d37c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "CreateALabel",
+			"_postman_id": "50634eac-2a47-44a9-9010-ba4e6b0adb5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/labels?name=Cudna labelka&color=purple&idBoard=642021a81b844732ad21ddcc&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"labels"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Cudna labelka"
+						},
+						{
+							"key": "color",
+							"value": "purple"
+						},
+						{
+							"key": "idBoard",
+							"value": "642021a81b844732ad21ddcc"
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddALabelToACard",
+			"_postman_id": "825293f8-6b9f-4c8f-ab92-55bfa4479da1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/1/cards/64202387bc16c2583f0774d0/idLabels?64202744352bf5fddbc36acd&key={{key}}&token={{token}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						"64202387bc16c2583f0774d0",
+						"idLabels"
+					],
+					"query": [
+						{
+							"key": "64202744352bf5fddbc36acd",
+							"value": null
+						},
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
