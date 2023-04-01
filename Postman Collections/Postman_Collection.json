@@ -7,7 +7,47 @@
 	"item": [
 		{
 			"name": "Create Board",
-			"_postman_id": "374516e3-55e0-427c-9fa8-f294ab15e41a",
+			"id": "374516e3-55e0-427c-9fa8-f294ab15e41a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name= Tablica API&key=4238fa5bc3803e07ba54c5401a5f66ef&token=ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": " Tablica API"
+						},
+						{
+							"key": "key",
+							"value": "4238fa5bc3803e07ba54c5401a5f66ef"
+						},
+						{
+							"key": "token",
+							"value": "ATTAcc789ea81d8d5c23500ed1ddd463979e674b03150a0c1e9a8a062b6151736392A76EA968"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Board Copy",
+			"id": "8d56c7b9-e8a3-4adb-96c4-68e36ce0d276",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,7 +87,7 @@
 		},
 		{
 			"name": "CreateNewList",
-			"_postman_id": "25537b52-7542-422d-8adc-abe18f117179",
+			"id": "25537b52-7542-422d-8adc-abe18f117179",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -90,7 +130,7 @@
 		},
 		{
 			"name": "CreateCard",
-			"_postman_id": "bd3f7f1f-5616-4962-b46e-2b48325c2c47",
+			"id": "bd3f7f1f-5616-4962-b46e-2b48325c2c47",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -127,7 +167,7 @@
 		},
 		{
 			"name": "CreateNewList",
-			"_postman_id": "4d91960b-e22d-4731-a6d2-e494d721a62e",
+			"id": "4d91960b-e22d-4731-a6d2-e494d721a62e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -168,7 +208,7 @@
 		},
 		{
 			"name": "updateBoard",
-			"_postman_id": "98f02e4a-047e-45e6-b010-5d547c158a34",
+			"id": "98f02e4a-047e-45e6-b010-5d547c158a34",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -205,7 +245,7 @@
 		},
 		{
 			"name": "DeleteCard",
-			"_postman_id": "a0ee7f46-4c4f-429b-a202-9be5fc98b0ea",
+			"id": "a0ee7f46-4c4f-429b-a202-9be5fc98b0ea",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -242,20 +282,19 @@
 		},
 		{
 			"name": "GetMember",
-			"_postman_id": "c32d10da-4152-46df-b1d6-5e07d457d37c",
+			"id": "c32d10da-4152-46df-b1d6-5e07d457d37c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
 			"request": {
 				"method": "GET",
-				"header": [],
-				"url": null
+				"header": []
 			},
 			"response": []
 		},
 		{
 			"name": "CreateALabel",
-			"_postman_id": "50634eac-2a47-44a9-9010-ba4e6b0adb5c",
+			"id": "50634eac-2a47-44a9-9010-ba4e6b0adb5c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -299,7 +338,7 @@
 		},
 		{
 			"name": "AddALabelToACard",
-			"_postman_id": "825293f8-6b9f-4c8f-ab92-55bfa4479da1",
+			"id": "825293f8-6b9f-4c8f-ab92-55bfa4479da1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -332,6 +371,18 @@
 						}
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "911569c9-7a73-489f-9fca-3a077b496803",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
