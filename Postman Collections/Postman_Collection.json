@@ -375,7 +375,7 @@
 			"response": []
 		},
 		{
-			"name": "New Request",
+			"name": "Create Organisagtion",
 			"id": "911569c9-7a73-489f-9fca-3a077b496803",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
